@@ -23,5 +23,10 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "A React app that displays the current weather for a specified city. This project uses the (https://www.weatherapi.com/) to fetch real-time weather data.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
