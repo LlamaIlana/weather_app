@@ -1,0 +1,157 @@
+p {
+  font-weight: 300;
+  text-align: center;
+}
+h2, h3 {
+  font-style: italic;
+  text-align: center;
+}
+.weather-icon {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 6rem; 
+}
+body {
+  background-image: url("./background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  margin: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 20vh;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.container-search {
+  padding: 10px;
+
+  border-radius: 8px;
+  background: rgba(255, 254, 254, 0.8);
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px 30px;
+  margin: 20px;
+  width: 100%; 
+  text-align: center;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+  color: #333; 
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+input:focus {
+  border-color: #007bff; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:first-child {
+  background-color: #007bff; 
+  color: white;
+}
+button:first-child:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+button:last-child {
+  background-color: #f8756b; 
+  color: white;
+}
+button:last-child:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+.container-display-data {
+  background: rgba(255, 254, 254, 0.8);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+.condtions {
+  background: rgba(255, 254, 254, 0.8);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 8rem;
+  width: 100%;
+}
+
+/*Geolocation Container*/
+.location-container {
+  background: #f0f0f0;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  color: #333;
+}
+.location-container h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+  font-size: 1.4rem;
+}
+
+.location-container p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+/*Geolocation Button*/
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.location-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*Spinner*/
+.spinner {
+  border: 8px solid #020202;
+  border-top: 8px solid #26a5fa; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
